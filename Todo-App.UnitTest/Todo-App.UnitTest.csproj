@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Todo_App.UnitTest</RootNamespace>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MemoryCache.Testing.Moq" Version="1.2.0" />
+    <PackageReference Include="Moq" Version="4.14.5" />
+    <PackageReference Include="nunit" Version="3.12.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.15.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Todo-App.Api\Todo-App.Api.csproj" />
+    <ProjectReference Include="..\Todo-App.Business\Todo-App.Business.csproj" />
+    <ProjectReference Include="..\Todo-App.DAL\Todo-App.DAL.csproj" />
+    <ProjectReference Include="..\TodoApp-Domain\TodoApp-Domain.csproj" />
+  </ItemGroup>
+
+</Project>
